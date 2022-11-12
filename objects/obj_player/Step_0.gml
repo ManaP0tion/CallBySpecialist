@@ -56,5 +56,10 @@ if (place_meeting(x, y+vspd, obj_solid))
 //move vertically
 y += vspd;
 
+//image direction
 if(keyboard_check(ord("D")) - keyboard_check(ord("A")) != 0)
 	image_xscale =  keyboard_check(ord("A")) - keyboard_check(ord("D")) 
+	
+//
+if(global.pause == 1)
+	exit
