@@ -2,15 +2,18 @@
 var rkey = keyboard_check(ord("D"));
 var lkey = keyboard_check(ord("A"));
 var jkey = keyboard_check(vk_space);
-
 //check for ground
 if (place_meeting(x, y+1, obj_solid))
     {
     vspd = 0;
+	jump_delay-=1
     //jumping
     if (jkey)
         {
-        vspd = -jspd;
+		if (jump_delay<0) {
+			vspd = -jspd;
+			jump_delay=20
+			}
         }
     }
 else
@@ -57,8 +60,10 @@ if (place_meeting(x, y+vspd, obj_solid))
 y += vspd;
 
 //image direction
-if(keyboard_check(ord("D")) - keyboard_check(ord("A")) != 0)
-	image_xscale =  keyboard_check(ord("A")) - keyboard_check(ord("D")) 
+if(mouse_x>x)
+	image_xscale = -1
+if(mouse_x<x)
+	image_xscale = 1
 	
 //
 if(global.pause == 1)

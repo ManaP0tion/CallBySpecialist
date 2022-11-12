@@ -3,3 +3,4 @@ spd = 4;
 hspd = 0;
 vspd = 0;
 jspd = 8;
+jump_delay=0
