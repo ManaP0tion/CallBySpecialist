@@ -13,6 +13,7 @@
     {"id":{"name":"font_menu","path":"fonts/font_menu/font_menu.yy",},"order":0,},
     {"id":{"name":"sprite3","path":"sprites/sprite3/sprite3.yy",},"order":2,},
     {"id":{"name":"sprite5","path":"sprites/sprite5/sprite5.yy",},"order":26,},
+    {"id":{"name":"TEST","path":"sprites/TEST/TEST.yy",},"order":3,},
     {"id":{"name":"sprite24","path":"sprites/sprite24/sprite24.yy",},"order":17,},
     {"id":{"name":"sprite22","path":"sprites/sprite22/sprite22.yy",},"order":15,},
     {"id":{"name":"sprite10","path":"sprites/sprite10/sprite10.yy",},"order":2,},
