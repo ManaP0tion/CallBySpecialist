@@ -75,6 +75,6 @@
   "nineSlice": null,
   "parent": {
     "name": "FreeSpritesArt",
-    "path": "folders/스프라이트/Sprites/FreeSpritesArt.yy",
+    "path": "folders/Sprites/Sprites/FreeSpritesArt.yy",
   },
 }
