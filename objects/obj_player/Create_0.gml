@@ -1,6 +1,5 @@
-grav = 1;
+grav = 0.5;
 spd = 4;
 hspd = 0;
 vspd = 0;
-jspd = 8;
 jump_delay=0
