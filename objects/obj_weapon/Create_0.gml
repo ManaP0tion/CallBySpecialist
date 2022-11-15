@@ -1,1 +1,2 @@
 currentweapon=0
+global.pistol_bullets=15
