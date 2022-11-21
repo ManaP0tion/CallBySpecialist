@@ -1,2 +1,2 @@
-global.rifle_bullets=30
+global.rifle_bullets=25
 reloading=false

@@ -56,6 +56,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"sprite11","path":"sprites/sprite11/sprite11.yy",},"order":3,},
     {"id":{"name":"sprite13","path":"sprites/sprite13/sprite13.yy",},"order":5,},
+    {"id":{"name":"font_bullets","path":"fonts/font_bullets/font_bullets.yy",},"order":1,},
     {"id":{"name":"Function_Test","path":"rooms/Function_Test/Function_Test.yy",},"order":0,},
   ],
   "Options": [
