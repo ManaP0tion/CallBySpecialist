@@ -9,7 +9,7 @@ hspd = move * spd;
 vspd = vspd + grav
 
 if(place_meeting(x, y=1, obj_solid) && (key_jump)){
-     vspd = -12;
+     vspd = -8;
 }
 
 // Horizontal Collision
