@@ -1,5 +1,5 @@
 if(!reloading) {
-	if(global.rifle_bullets<25) {
+	if(global.pistol_bullets<15) {
 		alarm[0]=180
 		reloading=true
 	}
