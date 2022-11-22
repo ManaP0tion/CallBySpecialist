@@ -42,6 +42,5 @@ if(mouse_x>x)
 if(mouse_x<x)
 	image_xscale = 1
 	
-//
 if(global.pause == 1)
 	exit
