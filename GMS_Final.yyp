@@ -5,6 +5,7 @@
   "resources": [
     {"id":{"name":"spr_pistol","path":"sprites/spr_pistol/spr_pistol.yy",},"order":4,},
     {"id":{"name":"obj_sniper","path":"objects/obj_sniper/obj_sniper.yy",},"order":3,},
+    {"id":{"name":"spr_portal_crosshair","path":"sprites/spr_portal_crosshair/spr_portal_crosshair.yy",},"order":12,},
     {"id":{"name":"obj_guide","path":"objects/obj_guide/obj_guide.yy",},"order":9,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":0,},
     {"id":{"name":"obj_p_blu","path":"objects/obj_p_blu/obj_p_blu.yy",},"order":11,},
@@ -36,6 +37,7 @@
     {"id":{"name":"sprite23","path":"sprites/sprite23/sprite23.yy",},"order":16,},
     {"id":{"name":"spr_crosshair","path":"sprites/spr_crosshair/spr_crosshair.yy",},"order":3,},
     {"id":{"name":"sprite18","path":"sprites/sprite18/sprite18.yy",},"order":10,},
+    {"id":{"name":"obj_portal_crosshair","path":"objects/obj_portal_crosshair/obj_portal_crosshair.yy",},"order":6,},
     {"id":{"name":"sprite29","path":"sprites/sprite29/sprite29.yy",},"order":22,},
     {"id":{"name":"spr_platform","path":"sprites/spr_platform/spr_platform.yy",},"order":1,},
     {"id":{"name":"sprite31","path":"sprites/sprite31/sprite31.yy",},"order":24,},
