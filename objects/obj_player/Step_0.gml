@@ -8,7 +8,7 @@ var move = key_right - key_left;
 hspd = move * spd;
 vspd = vspd + grav
 
-if(place_meeting(x, y=1, obj_solid)) {
+if(place_meeting(x, y+1, obj_solid)) {
 	if(key_jump){
      vspd = -8;
 	}
