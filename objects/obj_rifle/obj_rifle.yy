@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_rifle",
-  "spriteId": {
-    "name": "spr_rifle",
-    "path": "sprites/spr_rifle/spr_rifle.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
