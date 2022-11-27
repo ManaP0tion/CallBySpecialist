@@ -2,7 +2,11 @@ grav = 0.5;
 spd = 4;
 hspd = 0;
 vspd = 0;
-HP = 10;
+HP = 100;
+
+image_x = 1;
+Pick_cube = 0
+Pick = noone
 cursor_sprite = spr_crosshair;
-global.portal_red_count = 0;
-global.portal_blu_count = 0;
+seedir = 0;
+global.shotdir = 0;		// 포탈설치시 사용되는 좌표임
