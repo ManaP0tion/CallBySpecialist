@@ -47,6 +47,7 @@ if(mouse_x<x)
 if(global.pause == 1)
 	exit
 	
+// 캐릭터 모션	
 if(move=0) {
 	sprite_index=spr_char_idle
 }
@@ -56,3 +57,11 @@ else {
 	else 
 		sprite_index=spr_char_walk
 }	
+
+// 사망
+if(HP <=0 ){
+	sprite_index = spr_char_death
+	image_alpha -= 0.02
+	if (image_alpha <= 0)
+		instance_destroy(self)
+}
