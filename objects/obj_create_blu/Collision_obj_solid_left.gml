@@ -1,10 +1,9 @@
-/*
-
 image_alpha -= 0.02
 	if (image_alpha <= 0)
 		instance_destroy(self)
 		
-
+		
+global.warp_b = 3;
 		
 		
 var portal_blu;

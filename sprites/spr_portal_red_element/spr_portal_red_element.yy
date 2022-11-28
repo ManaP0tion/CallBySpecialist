@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "spr_portal_red_element",
   "bboxMode": 0,
-  "collisionKind": 1,
+  "collisionKind": 4,
   "type": 0,
   "origin": 4,
   "preMultiplyAlpha": false,
