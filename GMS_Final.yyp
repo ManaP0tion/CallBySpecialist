@@ -47,6 +47,7 @@
     {"id":{"name":"spr_platform","path":"sprites/spr_platform/spr_platform.yy",},"order":0,},
     {"id":{"name":"obj_rifle","path":"objects/obj_rifle/obj_rifle.yy",},"order":2,},
     {"id":{"name":"obj_follow_view","path":"objects/obj_follow_view/obj_follow_view.yy",},"order":1,},
+    {"id":{"name":"obj_room_1_setting","path":"objects/obj_room_1_setting/obj_room_1_setting.yy",},"order":21,},
     {"id":{"name":"spr_portal_red_element","path":"sprites/spr_portal_red_element/spr_portal_red_element.yy",},"order":6,},
     {"id":{"name":"spr_portal_blu_element","path":"sprites/spr_portal_blu_element/spr_portal_blu_element.yy",},"order":5,},
     {"id":{"name":"spr_wall_down","path":"sprites/spr_wall_down/spr_wall_down.yy",},"order":4,},
