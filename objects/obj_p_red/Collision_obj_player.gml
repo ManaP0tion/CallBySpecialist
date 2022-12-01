@@ -3,12 +3,12 @@
 
 if(global.blu_portal_count == 1 && keyboard_check_pressed(ord("W") )){
 	if(global.warp_b == 1){	// up
-		obj_player.x = obj_p_blu.x
-		obj_player.y = obj_p_blu.y - 20
+		obj_player.x = obj_p_blu.x 
+		obj_player.y = obj_p_blu.y - 100
 	}
 	if(global.warp_b == 2){	// down
 		obj_player.x = obj_p_blu.x
-		obj_player.y = obj_p_blu.y - 20
+		obj_player.y = obj_p_blu.y  + 100
 	}
 	if(global.warp_b == 3){	// left
 		obj_player.x = obj_p_blu.x - 10
@@ -27,11 +27,11 @@ if(global.blu_portal_count == 1 && keyboard_check_pressed(ord("W") )){
 if(global.blu_portal_count == 0 && keyboard_check_pressed(ord("W") )){
 	if(global.warp_b == 1){	// up
 		obj_player.x = obj_p_blu.x
-		obj_player.y = obj_p_blu.y - 20
+		obj_player.y = obj_p_blu.y - 100
 	}
 	if(global.warp_b == 2){	// down
 		obj_player.x = obj_p_blu.x
-		obj_player.y = obj_p_blu.y - 20
+		obj_player.y = obj_p_blu.y + 100
 	}
 	if(global.warp_b == 3){	// left
 		obj_player.x = obj_p_blu.x - 10
