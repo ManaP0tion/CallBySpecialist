@@ -1,0 +1,1 @@
+global.blu_portal_count = 1;

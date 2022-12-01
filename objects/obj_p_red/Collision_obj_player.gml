@@ -1,23 +1,49 @@
-if(instance_exists(obj_p_blu)){
-	obj_player.x = obj_p_blu.x + 20
-	obj_player.y = obj_p_blu.y
-}
 
 
-if(instance_exists(obj_p_blu)){
-	if(global.warp_r == 1){	// up
-		obj_player.x = obj_p_blu.x + 20
+
+if(global.blu_portal_count == 1 && keyboard_check_pressed(ord("W") )){
+	if(global.warp_b == 1){	// up
+		obj_player.x = obj_p_blu.x
+		obj_player.y = obj_p_blu.y - 20
+	}
+	if(global.warp_b == 2){	// down
+		obj_player.x = obj_p_blu.x
+		obj_player.y = obj_p_blu.y - 20
+	}
+	if(global.warp_b == 3){	// left
+		obj_player.x = obj_p_blu.x - 10
 		obj_player.y = obj_p_blu.y
 	}
-	if(global.warp_r == 2){	// down
+	if(global.warp_b == 4){	// right
+		obj_player.x = obj_p_blu.x + 10
+		obj_player.y = obj_p_blu.y
+	}
+	
+	else{	//기능테스트용임
 		obj_player.x = obj_p_blu.x
-		obj_player.y = obj_p_blu.y + 40;
-	}
-	if(global.warp_r == 3){	// left
-		
-	}
-	if(global.warp_r == 4){	// right
-		
+		obj_player.y = obj_p_blu.y
 	}
 }
+if(global.blu_portal_count == 0 && keyboard_check_pressed(ord("W") )){
+	if(global.warp_b == 1){	// up
+		obj_player.x = obj_p_blu.x
+		obj_player.y = obj_p_blu.y - 20
+	}
+	if(global.warp_b == 2){	// down
+		obj_player.x = obj_p_blu.x
+		obj_player.y = obj_p_blu.y - 20
+	}
+	if(global.warp_b == 3){	// left
+		obj_player.x = obj_p_blu.x - 10
+		obj_player.y = obj_p_blu.y
+	}
+	if(global.warp_b == 4){	// right
+		obj_player.x = obj_p_blu.x + 10
+		obj_player.y = obj_p_blu.y
+	}
 	
+	if(global.warp_b == 0){
+		obj_player.x = obj_p_blu.x
+		obj_player.y = obj_p_blu.y
+	}
+}
