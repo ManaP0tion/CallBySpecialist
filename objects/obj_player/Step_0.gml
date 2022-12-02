@@ -102,3 +102,8 @@ if(currentweapon!=0)
 	
 if(HP>100)
 	HP=100
+
+if(invin>0)
+	invin-=1
+	
+delay-=1
