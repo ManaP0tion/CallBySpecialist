@@ -2,7 +2,15 @@ grav = 0.5;
 spd = 4;
 hspd = 0;
 vspd = 0;
+
 HP = 100;
+HP_MAX = HP;
+healthbar_width = 500;
+healthbar_height = 60;
+healthbar_x = (640/2) - (healthbar_width/2)
+healthbar_y = 100;
+
+
 
 image_x = 1;
 Pick_cube = 0
