@@ -4,6 +4,7 @@ image_alpha -= 0.02
 		
 		
 global.warp_r= 4;
+
 		
 		
 var portal_red;

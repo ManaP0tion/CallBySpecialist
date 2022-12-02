@@ -99,3 +99,6 @@ if !instance_exists( Pick) Pick_cube = 0
 
 if(currentweapon!=0)
 	instance_destroy(obj_pistol)
+	
+if(HP>100)
+	HP=100
