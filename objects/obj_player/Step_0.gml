@@ -1,4 +1,6 @@
 // player input
+key_up = keyboard_check(ord("W"))
+key_down = keyboard_check(ord("S"));;
 key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space);
@@ -36,6 +38,8 @@ if(place_meeting(x, y+vspd, obj_blockset))
     }
     vspd = 0;
 }
+
+
 y = y + vspd
 
 //image direction
@@ -107,3 +111,20 @@ if(invin>0)
 	invin-=1
 	
 delay-=1
+
+
+
+/*/Stair
+is_on_ground = place_meeting(x, y+1, obj_blockset);
+if(is_on_ground == false){
+	is_on_ground = place_meeting(x, y+1, obj_stairset);
+}
+
+if(keyboard_check(key_up)){
+	if(place_meeting(x+hspd, y, obj_stairset)){
+		var instance = instance_place(x+hspd, y, obj_stairset);
+		if(collision_point(instance.x, instance.y-16. obj_stairset, false, true) == noone){
+			y = instance.y - instance.sprite_height
+		}
+	}
+}
