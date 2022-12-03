@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_restart",
+  "name": "obj_quit",
   "spriteId": {
-    "name": "spr_restart",
-    "path": "sprites/spr_restart/spr_restart.yy",
+    "name": "spr_quit",
+    "path": "sprites/spr_quit/spr_quit.yy",
   },
   "solid": false,
   "visible": true,

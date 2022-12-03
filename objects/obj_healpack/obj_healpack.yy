@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_healpack",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_healpack",
+    "path": "sprites/spr_healpack/spr_healpack.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
