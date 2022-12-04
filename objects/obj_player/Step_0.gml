@@ -14,7 +14,7 @@ vspd = vspd + grav
 
 if(place_meeting(x, y+1, obj_blockset)) {
 	if(key_jump){
-     vspd = -12;
+     vspd = -5;
 	}
 }
 
@@ -115,16 +115,12 @@ delay-=1
 
 
 /*/Stair
-is_on_ground = place_meeting(x, y+1, obj_blockset);
-if(is_on_ground == false){
-	is_on_ground = place_meeting(x, y+1, obj_stairset);
+if(place_meeting(x,y + 1 ,obj_stairset)) and key_up
+{
+vsp = 0;
 }
 
-if(keyboard_check(key_up)){
-	if(place_meeting(x+hspd, y, obj_stairset)){
-		var instance = instance_place(x+hspd, y, obj_stairset);
-		if(collision_point(instance.x, instance.y-16. obj_stairset, false, true) == noone){
-			y = instance.y - instance.sprite_height
-		}
-	}
+if(place_meeting(x,y + 1 ,obj_stairset)) and key_down
+{
+vsp =0;
 }
