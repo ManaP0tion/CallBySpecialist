@@ -1,3 +1,4 @@
+if !instance_exists(obj_player) exit;
 distance_to_player = sqrt(sqr(x - obj_player.x) + sqr(y - obj_player.y));//update the distance to player
 
 player_width = sprite_get_width(obj_player.sprite_index);
