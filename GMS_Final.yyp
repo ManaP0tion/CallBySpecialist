@@ -31,6 +31,7 @@
     {"id":{"name":"spr_cube_button","path":"sprites/spr_cube_button/spr_cube_button.yy",},"order":1,},
     {"id":{"name":"spr_wall_0","path":"sprites/spr_wall_0/spr_wall_0.yy",},"order":2,},
     {"id":{"name":"obj_cube_button","path":"objects/obj_cube_button/obj_cube_button.yy",},"order":1,},
+    {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":4,},
     {"id":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"order":0,},
     {"id":{"name":"obj_combine","path":"objects/obj_combine/obj_combine.yy",},"order":2,},
     {"id":{"name":"obj_solid_left","path":"objects/obj_solid_left/obj_solid_left.yy",},"order":8,},
