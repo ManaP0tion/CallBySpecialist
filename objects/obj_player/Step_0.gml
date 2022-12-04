@@ -6,6 +6,7 @@ key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space);
 key_shift = keyboard_check(vk_shift);
 spd_multi = key_shift ? 0.5 : 1.0
+delay-=1
 
 //Movement Calculate
 var move = key_right - key_left;
@@ -55,12 +56,16 @@ if(global.pause == 1)
 if(move=0) {
 	sprite_index=spr_char_idle
 }
-else {
-	if(key_shift=false)
+else if !(move=0) {
+	if(key_shift=false) {
 		sprite_index=spr_char_run
-	else 
+		running=true
+	}
+	else {
 		sprite_index=spr_char_walk
-}	
+		running=false
+	}
+}
 
 // 사망
 if(HP <=0 ){
@@ -100,19 +105,12 @@ if( Pick_cube && instance_exists( Pick))
   if keyboard_check_pressed(ord("C"))  {Pick_cube = 0}
 }
 if !instance_exists( Pick) Pick_cube = 0
-
-if(currentweapon!=0)
-	instance_destroy(obj_pistol)
 	
 if(HP>100)
 	HP=100
 
 if(invin>0)
 	invin-=1
-	
-delay-=1
-
-
 
 /*/Stair
 if(place_meeting(x,y + 1 ,obj_stairset)) and key_up

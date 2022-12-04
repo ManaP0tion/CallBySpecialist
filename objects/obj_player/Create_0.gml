@@ -2,6 +2,7 @@ grav = 0.5;
 spd = 4;
 hspd = 0;
 vspd = 0;
+running=false
 
 HP = 100;
 //HP_MAX = HP;

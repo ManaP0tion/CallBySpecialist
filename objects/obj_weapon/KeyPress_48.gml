@@ -1,1 +1,0 @@
-currentweapon=0
