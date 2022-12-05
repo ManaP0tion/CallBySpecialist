@@ -9,6 +9,14 @@ if(place_meeting(x+hspd, y, obj_blockset))
     }
     hspd = 0;
 }
+if(place_meeting(x+hspd, y, obj_combine))
+{
+    while(!place_meeting(x+sign(hspd), y, obj_combine))
+    {
+        x= x + sign(hspd)
+    }
+    hspd = 0;
+}
 x = x + hspd
 
 // Vertical Collision
@@ -30,9 +38,9 @@ if (distance_to_object(obj_player)<200) {
 		recog=true
 }
 
-/*if (image_xscale=1&&(obj_player.x>x-250))||(image_xscale=-1&&(obj_player.x<x+250)) {
+if (image_xscale=1&&(obj_player.x>x-250)&&obj_player.x<x)or(image_xscale=-1&&(obj_player.x<x+250)&&obj_player.x>x) {
 	recog=true
-}*/
+}
 
 if (recog=true) {
 	mtp=true
@@ -48,8 +56,9 @@ if (recog=true) {
 //플레이어 추적
 if(mtp=true) {
 	move_towards_point(obj_player.x, y, 2)
-	if(obj_player.x=x)
+	if(obj_player.x=x)||!(place_meeting(x-20,y+22,obj_solid))||!(place_meeting(x+20,y+22,obj_solid))
 		speed=0
 }
 else
 	speed=0
+	

@@ -29,7 +29,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Function",
-    "path": "folders/Objects/Function.yy",
+    "name": "System",
+    "path": "folders/Objects/System.yy",
   },
 }

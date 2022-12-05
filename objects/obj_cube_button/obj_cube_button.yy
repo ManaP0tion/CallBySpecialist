@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_cube_button",
   "spriteId": {
-    "name": "spr_cube_button",
-    "path": "sprites/spr_cube_button/spr_cube_button.yy",
+    "name": "spr_cube_button_blu",
+    "path": "sprites/spr_cube_button_blu/spr_cube_button_blu.yy",
   },
   "solid": true,
   "visible": true,

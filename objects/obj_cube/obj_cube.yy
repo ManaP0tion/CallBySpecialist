@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_cube",
   "spriteId": {
-    "name": "spr_cube",
-    "path": "sprites/spr_cube/spr_cube.yy",
+    "name": "spr_cube_blu",
+    "path": "sprites/spr_cube_blu/spr_cube_blu.yy",
   },
   "solid": false,
   "visible": true,

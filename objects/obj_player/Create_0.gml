@@ -5,7 +5,7 @@ vspd = 0;
 running=false
 
 HP = 100;
-//HP_MAX = HP;
+HP_MAX = HP;
 healthbar_width = 500;
 healthbar_height = 60;
 healthbar_x = (640/2) - (healthbar_width/2)
