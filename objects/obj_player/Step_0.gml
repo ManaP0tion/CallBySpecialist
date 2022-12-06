@@ -5,8 +5,10 @@ key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space);
 key_shift = keyboard_check(vk_shift);
-spd_multi = key_shift ? 0.5 : 1.0
+spd_multi = key_shift ? 0.4 : 0.8
 delay-=1
+if(knife_delay>0)
+	knife_delay-=1
 
 //Movement Calculate
 var move = key_right - key_left;
@@ -44,7 +46,7 @@ if(place_meeting(x, y+vspd, obj_blockset))
 y = y + vspd
 
 //image direction
-if(mouse_x>x)
+if(hspd)
 	image_xscale = 1
 if(mouse_x<x)
 	image_xscale = -1
@@ -53,8 +55,8 @@ if(global.pause == 1)
 	exit
 	
 // 캐릭터 모션	
-if(move=0) {
-	sprite_index=spr_char_idle
+if(knifing=true) {
+	sprite_index=spr_char_knife
 }
 else if !(move=0) {
 	if(key_shift=false) {
@@ -66,6 +68,8 @@ else if !(move=0) {
 		running=false
 	}
 }
+else
+	sprite_index=spr_char_idle
 
 // 사망
 if(HP <=0 ){
@@ -112,13 +116,12 @@ if(HP>100)
 if(invin>0)
 	invin-=1
 
-/*/Stair
-if(place_meeting(x,y + 1 ,obj_stairset)) and key_up
-{
-vsp = 0;
-}
+if(knife_delay=0)
+	knifing=false
+else
+	knifing=true
 
-if(place_meeting(x,y + 1 ,obj_stairset)) and key_down
-{
-vsp =0;
+// 점프패드
+if(place_meeting(x, y+1, obj_jump_pad)) {
+	vspd = -15
 }

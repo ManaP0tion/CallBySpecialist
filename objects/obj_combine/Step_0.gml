@@ -56,9 +56,10 @@ if (recog=true) {
 //플레이어 추적
 if(mtp=true) {
 	move_towards_point(obj_player.x, y, 2)
-	if(obj_player.x=x)||!(place_meeting(x-20,y+22,obj_solid))||!(place_meeting(x+20,y+22,obj_solid))
+	if(obj_player.x=x)||!(place_meeting(x-20,y+22,obj_solid))||place_meeting(x+20, y+22,obj_solid)
 		speed=0
-}
+	else if(place_meeting(x-image_xscale, y, obj_combine))
+		speed=0
+}	
 else
 	speed=0
-	
