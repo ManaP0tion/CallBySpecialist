@@ -6,16 +6,17 @@ key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space);
 key_shift = keyboard_check(vk_shift);
 spd_multi = key_shift ? 0.4 : 0.8
-delay-=1
+if(delay>0)
+	delay-=1
 if(knife_delay>0)
 	knife_delay-=1
 
 //Movement Calculate
 var move = key_right - key_left;
-hspd = move * spd * spd_multi;
+//hspd = move * spd * spd_multi;
 vspd = vspd + grav
 
-if(place_meeting(x, y+1, obj_blockset)) {
+if(place_meeting(x, y+1, obj_blockset))&&!(knifing) {
 	if(key_jump){
      vspd = -5;
 	}
@@ -30,26 +31,27 @@ if(place_meeting(x+hspd, y, obj_blockset))
     }
     hspd = 0;
 }
+if(place_meeting(x+hspd, y, obj_stairset)){
+    y=y-8
+}
 x = x + hspd
 
 // Vertical Collision
-if(place_meeting(x, y+vspd, obj_blockset))
+if(place_meeting(x, y+vspd, obj_blockset))||(place_meeting(x, y+vspd, obj_stairset))
 {
-    while(!place_meeting(x, y+sign(vspd), obj_blockset))
+    while(!place_meeting(x, y+sign(vspd), obj_blockset))&&(!place_meeting(x, y+sign(vspd), obj_stairset))
     {
         y = y + sign(vspd)
     }
     vspd = 0;
 }
-
-
 y = y + vspd
 
 //image direction
-if(hspd)
-	image_xscale = 1
-if(mouse_x<x)
+if(key_left)
 	image_xscale = -1
+if(key_right)
+	image_xscale = 1
 
 if(global.pause == 1)
 	exit
@@ -57,6 +59,10 @@ if(global.pause == 1)
 // 캐릭터 모션	
 if(knifing=true) {
 	sprite_index=spr_char_knife
+	hspd=0	
+}
+else if(shooting) {
+	sprite_index=spr_char_shoot
 }
 else if !(move=0) {
 	if(key_shift=false) {
@@ -70,6 +76,7 @@ else if !(move=0) {
 }
 else
 	sprite_index=spr_char_idle
+	hspd = move * spd * spd_multi;
 
 // 사망
 if(HP <=0 ){
@@ -120,6 +127,11 @@ if(knife_delay=0)
 	knifing=false
 else
 	knifing=true
+	
+if(delay=0)
+	shooting=false
+else
+	shooting=true
 
 // 점프패드
 if(place_meeting(x, y+1, obj_jump_pad)) {

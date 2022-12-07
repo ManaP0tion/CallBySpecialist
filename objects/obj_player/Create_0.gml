@@ -5,6 +5,7 @@ vspd = 0;
 running=false
 knife_delay=0
 knifing=false
+shooting=false
 depth = -999
 
 HP = 100;
@@ -25,7 +26,7 @@ global.warp_b = 0;
 
 //무기
 global.pistol_bullets=15
-delay=20
+delay=0
 reloading=false
 
 //invin이 0일때만 데미지를 받음
