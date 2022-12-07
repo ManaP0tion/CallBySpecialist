@@ -83,12 +83,12 @@ seedir = point_direction(x, y, mouse_x, mouse_y);
 global.shotdir = point_direction(x, y, mouse_x, mouse_y);
 
 // 잡기기능
-if keyboard_check_pressed( ord("G"))
+if keyboard_check_pressed( ord("C"))
 
-  if (!Pick_cube && instance_exists(obj_cube))
+  if (!Pick_cube && (instance_exists(obj_cube_set)))
   {
     var a;
-    a = instance_nearest( x+lengthdir_x( 32, seedir+12*-image_x), y+lengthdir_y( 32, seedir+12*-image_x), obj_cube)
+    a = instance_nearest( x+lengthdir_x( 32, seedir+12*-image_x), y+lengthdir_y( 32, seedir+12*-image_x), obj_cube_set)
     if point_distance( x, y, a.x, a.y) < 48
     {
       Pick_cube = 1
@@ -106,7 +106,7 @@ if( Pick_cube && instance_exists( Pick))
 {
   Pick . sspeed = (x+lengthdir_x( 32, seedir+12*-image_x)-Pick.x)
   Pick . wspeed = (y+lengthdir_y( 32, seedir+12*-image_x)-Pick.y)
-  if keyboard_check_pressed(ord("C"))  {Pick_cube = 0}
+  //if keyboard_check_pressed(ord("C"))  {Pick_cube = 0}
 }
 if !instance_exists( Pick) Pick_cube = 0
 	

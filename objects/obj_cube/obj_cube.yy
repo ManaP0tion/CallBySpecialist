@@ -11,7 +11,10 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_cube_set",
+    "path": "objects/obj_cube_set/obj_cube_set.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
