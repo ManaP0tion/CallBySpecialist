@@ -1,4 +1,4 @@
-hp = 25
+HP = 25
 recog=false
 hspd=0
 vspd=0
