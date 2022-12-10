@@ -48,3 +48,7 @@ nearest=instance_nearest(x,y,obj_player);
 direction=point_direction(x,y,nearest.x,nearest.y);
 
 
+if(HP <= 0){
+	instance_destroy(self)
+}
+
