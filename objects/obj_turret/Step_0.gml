@@ -9,6 +9,9 @@ else{
 	active = false
 }
 
+if(HP <= 0){
+	instance_destroy(self)
+}
 
 
 

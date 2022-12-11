@@ -166,6 +166,7 @@
     {"id":{"name":"scifi_5b3a","path":"sprites/scifi_5b3a/scifi_5b3a.yy",},"order":7,},
     {"id":{"name":"spr_char_idle","path":"sprites/spr_char_idle/spr_char_idle.yy",},"order":2,},
     {"id":{"name":"scifi_4a1a","path":"sprites/scifi_4a1a/scifi_4a1a.yy",},"order":50,},
+    {"id":{"name":"spr_door_bg","path":"sprites/spr_door_bg/spr_door_bg.yy",},"order":23,},
     {"id":{"name":"Icon_F","path":"sprites/Icon_F/Icon_F.yy",},"order":3,},
     {"id":{"name":"scifi_2a2a","path":"sprites/scifi_2a2a/scifi_2a2a.yy",},"order":27,},
     {"id":{"name":"obj_wall_0","path":"objects/obj_wall_0/obj_wall_0.yy",},"order":3,},
@@ -227,8 +228,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Function_Test","path":"rooms/Function_Test/Function_Test.yy",},},
     {"roomId":{"name":"Tutorial02","path":"rooms/Tutorial02/Tutorial02.yy",},},
+    {"roomId":{"name":"Function_Test","path":"rooms/Function_Test/Function_Test.yy",},},
     {"roomId":{"name":"Tutorial01","path":"rooms/Tutorial01/Tutorial01.yy",},},
     {"roomId":{"name":"Intro","path":"rooms/Intro/Intro.yy",},},
     {"roomId":{"name":"Credit","path":"rooms/Credit/Credit.yy",},},
