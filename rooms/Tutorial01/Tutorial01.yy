@@ -92,6 +92,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6442F292","properties":[],"isDnd":false,"objectId":{"name":"obj_cube_button","path":"objects/obj_cube_button/obj_cube_button.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1999.0,"y":700.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_13B433DE","properties":[],"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1000.0,"y":696.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_166A1224","properties":[],"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1016.0,"y":696.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_747E468F","properties":[],"isDnd":false,"objectId":{"name":"obj_silent","path":"objects/obj_silent/obj_silent.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1080.0,"y":560.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Back","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_F0C4EB1","spriteId":{"name":"scifi_4g1a","path":"sprites/scifi_4g1a/scifi_4g1a.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":672.0,},
@@ -493,6 +494,7 @@
     {"name":"inst_6442F292","path":"rooms/Tutorial01/Tutorial01.yy",},
     {"name":"inst_13B433DE","path":"rooms/Tutorial01/Tutorial01.yy",},
     {"name":"inst_166A1224","path":"rooms/Tutorial01/Tutorial01.yy",},
+    {"name":"inst_747E468F","path":"rooms/Tutorial01/Tutorial01.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

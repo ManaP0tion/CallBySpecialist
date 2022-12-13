@@ -11,7 +11,7 @@ depth = -999
 HP = 100;
 HP_MAX = HP;
 healthbar_width = 500;
-healthbar_height = 60;
+healthbar_height = 40;
 healthbar_x = (640/2) - (healthbar_width/2)
 healthbar_y = 100;
 
@@ -31,3 +31,10 @@ reloading=false
 
 //invin이 0일때만 데미지를 받음
 invin=0
+
+
+silent_MAX = 50
+silentbar_width = 500;
+silentbar_height = 40;
+silentbar_x = (640/2) - (healthbar_width/2)
+silentbar_y = 140;
