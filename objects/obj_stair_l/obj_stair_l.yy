@@ -7,7 +7,7 @@
     "path": "sprites/spr_stair_l/spr_stair_l.yy",
   },
   "solid": true,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
