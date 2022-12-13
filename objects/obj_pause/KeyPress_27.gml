@@ -1,7 +1,10 @@
-if (global.pause == 0){
-	global.pause = 1;
+if(keyboard_check(vk_escape)){
+	if(!global.pause){
+		global.pause = true;
+		instance_deactivate_all(true);
+	}
+	else{
+		global.pause = false;
+		instance_activate_all()
+	}
 }
-else{
-	global.pause = 0;
-}
-	

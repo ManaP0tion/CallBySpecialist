@@ -1,1 +1,1 @@
-global.pause = 0
+global.pause = false
