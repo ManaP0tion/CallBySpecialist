@@ -10,13 +10,15 @@ if(delay>0)
 	delay-=1
 if(knife_delay>0)
 	knife_delay-=1
+if(shooting_delay>0)
+	shooting_delay-=1
 
 //Movement Calculate
 var move = key_right - key_left;
 //hspd = move * spd * spd_multi;
 vspd = vspd + grav
 
-if(place_meeting(x, y+1, obj_blockset))&&!(knifing) {
+if(place_meeting(x, y+1, obj_blockset))&&!(knifing)&&!(shooting) {
 	if(key_jump){
      vspd = -5;
 	}
@@ -57,11 +59,11 @@ if(global.pause == 1)
 	exit
 	
 // 캐릭터 모션	
+
 if(knifing=true) {
 	sprite_index=spr_char_knife
-	hspd=0	
 }
-else if(shooting) {
+else if !(delay=0) {
 	sprite_index=spr_char_shoot
 }
 else if !(move=0) {
@@ -76,6 +78,11 @@ else if !(move=0) {
 }
 else
 	sprite_index=spr_char_idle
+
+//멈춤
+if (knifing)||(shooting)
+	hspd=0
+else
 	hspd = move * spd * spd_multi;
 
 // 사망
@@ -127,8 +134,8 @@ if(knife_delay=0)
 	knifing=false
 else
 	knifing=true
-	
-if(delay=0)
+
+if(shooting_delay=0)
 	shooting=false
 else
 	shooting=true
@@ -137,5 +144,3 @@ else
 if(place_meeting(x, y+1, obj_jump_pad)) {
 	vspd = -15
 }
-
-

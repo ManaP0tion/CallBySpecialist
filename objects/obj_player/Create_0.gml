@@ -6,6 +6,7 @@ running=false
 knife_delay=0
 knifing=false
 shooting=false
+shooting_delay=0
 depth = -999
 
 HP = 100;

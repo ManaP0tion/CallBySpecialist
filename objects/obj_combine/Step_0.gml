@@ -1,5 +1,8 @@
 if !instance_exists(obj_player) exit;
 
+if(combine_delay>0)
+	combine_delay-=1
+	
 // Horizontal Collision
 if(place_meeting(x+hspd, y, obj_blockset))
 {
@@ -86,3 +89,14 @@ if(mtp=true) {
 }
 else
 	speed=0
+
+//공격
+if(recog=true) {
+	if(distance_to_object(obj_player)<160) {
+		if(combine_delay=0) {
+			instance_create_depth(x, y, -1, obj_combine_bullet)
+			combine_delay=90
+			draw_text(x,y,"t")
+		}
+	}
+}
