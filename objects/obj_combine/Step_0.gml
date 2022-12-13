@@ -32,34 +32,57 @@ y = y + vspd
 
 vspd = vspd + grav
 
-//플레이어 인식
-if (distance_to_object(obj_player)<200) {
+//달리기 인식
+if (distance_to_object(obj_player)<192) {
 	if(obj_player.running=true)
 		recog=true
 }
 
-if (image_xscale=1&&(obj_player.x>x-250)&&obj_player.x<x)or(image_xscale=-1&&(obj_player.x<x+250)&&obj_player.x>x) {
+//총 인식
+if (distance_to_object(obj_player)<192) {
+	if(obj_player.shooting=true)
+		recog=true
+}
+
+//시야 인식
+if (image_xscale=1&&(obj_player.x>x-256)&&obj_player.x<x)or(image_xscale=-1&&(obj_player.x<x+256)&&obj_player.x>x) {
 	recog=true
 }
 
+//달리기 의심
+if (distance_to_object(obj_player)<256) {
+	if(obj_player.running=true)
+		doubt=true
+}
+
+//시야 의심
+else if (image_xscale=1&&(obj_player.x>x-320)&&obj_player.x<x)or(image_xscale=-1&&(obj_player.x<x+320)&&obj_player.x>x) {
+	doubt=true
+}
+else
+	doubt=false
+	
+//인식 행동
 if (recog=true) {
-	mtp=true
 	if(obj_player.x<x)
 		image_xscale = 1
 	if(obj_player.x>x)
 		image_xscale = -1
-	if(distance_to_object(obj_player)<50) {
+	if(distance_to_object(obj_player)<100) {
 		mtp=false
 	}
+	else
+		mtp=true
+	doubt=false
 }
 
 //플레이어 추적
 if(mtp=true) {
 	move_towards_point(obj_player.x, y, 2)
-	if(obj_player.x=x)||!(place_meeting(x-20,y+22,obj_solid))||place_meeting(x+20, y+22,obj_solid)
+	if(obj_player.x=x)||!(place_meeting(x-20,y+22,obj_solid))||!(place_meeting(x+20, y+22,obj_solid))
 		speed=0
 	else if(place_meeting(x-image_xscale, y, obj_combine))
 		speed=0
-}	
+}
 else
 	speed=0
