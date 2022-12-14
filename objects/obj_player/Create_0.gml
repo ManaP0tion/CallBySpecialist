@@ -39,3 +39,7 @@ silentbar_width = 500;
 silentbar_height = 40;
 silentbar_x = (640/2) - (healthbar_width/2)
 silentbar_y = 140;
+
+player_state = 1
+
+image_alpha = 1

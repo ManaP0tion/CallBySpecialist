@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_silent",
+  "name": "obj_die",
   "spriteId": null,
   "solid": false,
   "visible": true,
