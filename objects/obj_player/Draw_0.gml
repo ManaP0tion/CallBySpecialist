@@ -6,3 +6,4 @@ if(reloading)
 	
 if(global.pistol_bullets>0)
 	draw_text(x+10, y-30, string(global.pistol_bullets))
+	

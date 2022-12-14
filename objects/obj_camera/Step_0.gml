@@ -5,7 +5,7 @@ pointdir = point_direction(x, y, obj_player.x, obj_player.y)
 
 if (distance_to_player <= los) && !collision_line(x,y,obj_player.x,obj_player.y, obj_blockset,false,true)
 {
-	global.silent += 10
+	global.silent += 1
 	activate = true
 	seedir = point_direction( x, y, obj_player.x, obj_player.y)
 	show_debug_message("activate")

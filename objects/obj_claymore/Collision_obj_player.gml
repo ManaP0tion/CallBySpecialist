@@ -1,1 +1,2 @@
-alarm[0]=30
+instance_create_depth(x, y, -1, obj_bomb)
+instance_destroy(self)

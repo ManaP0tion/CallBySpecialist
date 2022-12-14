@@ -13,5 +13,3 @@ draw_sprite_stretched(spr_silentbar, 0, silentbar_x, silentbar_y, min((global.si
 font_set_cache_size(font_menu,20)
 draw_text(100, 140, "Silent : "+string(global.silent))
 
-draw_sprite(spr_bullets_ui, 0, 1650, 950)
-draw_text(1710, 960, string(global.pistol_bullets)+" / 15")
