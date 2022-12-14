@@ -190,6 +190,7 @@
     {"id":{"name":"Tutorial01","path":"rooms/Tutorial01/Tutorial01.yy",},"order":3,},
     {"id":{"name":"spr_oneway","path":"sprites/spr_oneway/spr_oneway.yy",},"order":8,},
     {"id":{"name":"obj_pistol_crosshair","path":"objects/obj_pistol_crosshair/obj_pistol_crosshair.yy",},"order":5,},
+    {"id":{"name":"spr_bullets_ui","path":"sprites/spr_bullets_ui/spr_bullets_ui.yy",},"order":6,},
     {"id":{"name":"obj_button_left","path":"objects/obj_button_left/obj_button_left.yy",},"order":4,},
     {"id":{"name":"obj_turret","path":"objects/obj_turret/obj_turret.yy",},"order":0,},
     {"id":{"name":"scifi_1a1a","path":"sprites/scifi_1a1a/scifi_1a1a.yy",},"order":31,},
@@ -277,7 +278,6 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Function_Test","path":"rooms/Function_Test/Function_Test.yy",},},
     {"roomId":{"name":"Intro","path":"rooms/Intro/Intro.yy",},},
     {"roomId":{"name":"Tutorial01","path":"rooms/Tutorial01/Tutorial01.yy",},},
     {"roomId":{"name":"Tutorial02","path":"rooms/Tutorial02/Tutorial02.yy",},},
@@ -287,6 +287,7 @@
     {"roomId":{"name":"Main04","path":"rooms/Main04/Main04.yy",},},
     {"roomId":{"name":"Credit","path":"rooms/Credit/Credit.yy",},},
     {"roomId":{"name":"Main05","path":"rooms/Main05/Main05.yy",},},
+    {"roomId":{"name":"Function_Test","path":"rooms/Function_Test/Function_Test.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
