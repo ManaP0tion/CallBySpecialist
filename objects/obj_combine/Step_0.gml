@@ -46,13 +46,12 @@ if (distance_to_player<los1 && !collision_line(x,y,obj_player.x,obj_player.y, ob
 
 //총 인식
 if (distance_to_player<los1) {
-	
 	if(obj_player.shooting=true)
 		recog=true
 }
 
 //시야 인식
-if (distance_to_player <= los) && !collision_line(x,y,obj_player.x,obj_player.y, obj_blockset,false,true)  {
+if (image_xscale=1&&(obj_player.x>x-256)&&obj_player.x<x)or(image_xscale=-1&&(obj_player.x<x+256)&&obj_player.x>x)  {
 	recog=true
 }
 
@@ -63,7 +62,7 @@ if (distance_to_player <= los) && !collision_line(x,y,obj_player.x,obj_player.y,
 }
 
 //시야 의심
-else if (distance_to_player <= los2) && !collision_line(x,y,obj_player.x,obj_player.y, obj_blockset,false,true) {
+else if (image_xscale=1&&(obj_player.x>x-320)&&obj_player.x<x)or(image_xscale=-1&&(obj_player.x<x+320)&&obj_player.x>x) {
 	doubt=true
 }
 else
@@ -86,7 +85,7 @@ if (recog=true) {
 //플레이어 추적
 if(mtp=true) {
 	move_towards_point(obj_player.x, y, 2)
-	if(obj_player.x=x)||!(place_meeting(x-20,y+22,obj_solid))||!(place_meeting(x+20, y+22,obj_solid))
+	if(obj_player.x=x)||!(place_meeting(x-20,y+22,obj_blockset))||!(place_meeting(x+20, y+22,obj_blockset))
 		speed=0
 	else if(place_meeting(x-image_xscale, y, obj_combine))
 		speed=0
@@ -100,7 +99,6 @@ if(recog=true) {
 		if(combine_delay=0) {
 			instance_create_depth(x, y, -1, obj_combine_bullet)
 			combine_delay=90
-			draw_text(x,y,"t")
 		}
 	}
 }
