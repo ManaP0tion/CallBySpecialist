@@ -7,7 +7,7 @@
     "path": "sprites/spr_pistol_bullet/spr_pistol_bullet.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

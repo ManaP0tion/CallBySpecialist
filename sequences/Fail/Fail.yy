@@ -268,7 +268,7 @@
     "y": 119.9999,
   },
   "lockOrigin": false,
-  "showBackdrop": true,
+  "showBackdrop": false,
   "showBackdropImage": false,
   "backdropImagePath": "",
   "backdropImageOpacity": 0.5,

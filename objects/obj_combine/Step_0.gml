@@ -35,31 +35,35 @@ y = y + vspd
 
 vspd = vspd + grav
 
+distance_to_player = distance_to_object(obj_player);
+
+
 //달리기 인식
-if (distance_to_object(obj_player)<192) {
+if (distance_to_player<los1 && !collision_line(x,y,obj_player.x,obj_player.y, obj_blockset,false,true)) {
 	if(obj_player.running=true)
 		recog=true
 }
 
 //총 인식
-if (distance_to_object(obj_player)<192) {
+if (distance_to_player<los1) {
+	
 	if(obj_player.shooting=true)
 		recog=true
 }
 
 //시야 인식
-if (image_xscale=1&&(obj_player.x>x-256)&&obj_player.x<x)or(image_xscale=-1&&(obj_player.x<x+256)&&obj_player.x>x) {
+if (distance_to_player <= los) && !collision_line(x,y,obj_player.x,obj_player.y, obj_blockset,false,true)  {
 	recog=true
 }
 
 //달리기 의심
-if (distance_to_object(obj_player)<256) {
+if (distance_to_player <= los) && !collision_line(x,y,obj_player.x,obj_player.y, obj_blockset,false,true) {
 	if(obj_player.running=true)
 		doubt=true
 }
 
 //시야 의심
-else if (image_xscale=1&&(obj_player.x>x-320)&&obj_player.x<x)or(image_xscale=-1&&(obj_player.x<x+320)&&obj_player.x>x) {
+else if (distance_to_player <= los2) && !collision_line(x,y,obj_player.x,obj_player.y, obj_blockset,false,true) {
 	doubt=true
 }
 else
@@ -92,11 +96,15 @@ else
 
 //공격
 if(recog=true) {
-	if(distance_to_object(obj_player)<160) {
+	if(distance_to_object(obj_player)<160 && !collision_line(x,y,obj_player.x,obj_player.y, obj_blockset,false,true)) {
 		if(combine_delay=0) {
 			instance_create_depth(x, y, -1, obj_combine_bullet)
 			combine_delay=90
 			draw_text(x,y,"t")
 		}
 	}
+}
+
+if(HP<=0){
+	instance_destroy(self)
 }

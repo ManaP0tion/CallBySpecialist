@@ -1,3 +1,5 @@
+if !instance_exists(obj_player) exit;
+
 distance_to_player = distance_to_object(obj_player);
 pointdir = point_direction(x, y, obj_player.x, obj_player.y)
 

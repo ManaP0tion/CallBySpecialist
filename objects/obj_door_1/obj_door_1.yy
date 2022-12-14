@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_door_1",
   "spriteId": {
-    "name": "spr_door_alwaysopenA",
-    "path": "sprites/spr_door_alwaysopenA/spr_door_alwaysopenA.yy",
+    "name": "spr_opendoor_1",
+    "path": "sprites/spr_opendoor_1/spr_opendoor_1.yy",
   },
   "solid": false,
   "visible": true,

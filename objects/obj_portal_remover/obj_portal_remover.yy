@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_portal_remover",
   "spriteId": {
-    "name": "d",
-    "path": "sprites/d/d.yy",
+    "name": "spr_remover",
+    "path": "sprites/spr_remover/spr_remover.yy",
   },
   "solid": false,
   "visible": true,
