@@ -1,0 +1,12 @@
+HP = 100
+HP_MAX = 100
+recog=false
+hspd=0
+vspd=0
+grav=0.5
+mtp=false
+doubt=true
+combine_delay=0
+los = 256
+los1 = 192 // 시야인식
+los2 = 320 // 시야의심
