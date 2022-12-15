@@ -361,6 +361,7 @@
     {"id":{"name":"obj_create_blu","path":"objects/obj_create_blu/obj_create_blu.yy",},"order":7,},
     {"id":{"name":"scifi_stair_1b1a","path":"sprites/scifi_stair_1b1a/scifi_stair_1b1a.yy",},"order":9,},
     {"id":{"name":"scifi_console_1c1a_1","path":"sprites/scifi_console_1c1a_1/scifi_console_1c1a_1.yy",},"order":13,},
+    {"id":{"name":"obj_credit_set","path":"objects/obj_credit_set/obj_credit_set.yy",},"order":14,},
     {"id":{"name":"scifi_platform_1c1a","path":"sprites/scifi_platform_1c1a/scifi_platform_1c1a.yy",},"order":2,},
     {"id":{"name":"spr_stair_r","path":"sprites/spr_stair_r/spr_stair_r.yy",},"order":8,},
     {"id":{"name":"scifi_6a2a","path":"sprites/scifi_6a2a/scifi_6a2a.yy",},"order":8,},
