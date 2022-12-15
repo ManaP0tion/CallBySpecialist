@@ -5,6 +5,7 @@ pointdir = point_direction(x, y, obj_player.x, obj_player.y)
 
 if(distance_to_player <= los) && !collision_line(x,y,obj_player.x,obj_player.y, obj_blockset,false,true){
 	active = true
+	audio_play_sound(snd_detact, 3, 0)
 	obj_player.HP -= 1
 }
 else{

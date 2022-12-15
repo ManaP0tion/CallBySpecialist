@@ -90,6 +90,7 @@ else
 if(HP <=0 ){
 	HP = 0
 	sprite_index = spr_char_death
+	
 	image_alpha -= 0.02
 	if (image_alpha <= 0 && player_state == 1){
 		player_state = 0

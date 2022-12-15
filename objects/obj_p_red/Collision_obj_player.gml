@@ -1,4 +1,5 @@
 if(global.blu_portal_count == 1 && keyboard_check_pressed(ord("W") )){
+	audio_play_sound(snd_portal_in, 2, 0)
 	if(global.warp_b == 1){	// up
 		obj_player.x = obj_p_blu.x 
 		obj_player.y = obj_p_blu.y
