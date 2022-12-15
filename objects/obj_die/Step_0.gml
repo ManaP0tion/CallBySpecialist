@@ -1,4 +1,4 @@
-if(obj_player.player_state = 0){
+/*if(obj_player.player_state = 0){
 	obj_player.vspd = 0
 	obj_player.hspd = 0
 	instance_deactivate_all(true);
