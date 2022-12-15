@@ -1,1 +1,1 @@
-room_goto(Function_Test)
+room_goto(Credit)
