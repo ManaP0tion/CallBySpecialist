@@ -313,7 +313,6 @@
     {"id":{"name":"Icon_ArrowLeft","path":"sprites/Icon_ArrowLeft/Icon_ArrowLeft.yy",},"order":17,},
     {"id":{"name":"obj_cube","path":"objects/obj_cube/obj_cube.yy",},"order":0,},
     {"id":{"name":"obj_restart","path":"objects/obj_restart/obj_restart.yy",},"order":1,},
-    {"id":{"name":"Main3","path":"rooms/Main3/Main3.yy",},"order":7,},
     {"id":{"name":"obj_main2","path":"objects/obj_main2/obj_main2.yy",},"order":7,},
     {"id":{"name":"scifi_platform_1d1a_1","path":"sprites/scifi_platform_1d1a_1/scifi_platform_1d1a_1.yy",},"order":12,},
     {"id":{"name":"wui_draw","path":"scripts/wui_draw/wui_draw.yy",},"order":11,},
@@ -378,7 +377,6 @@
     {"roomId":{"name":"Main05","path":"rooms/Main05/Main05.yy",},},
     {"roomId":{"name":"Credit","path":"rooms/Credit/Credit.yy",},},
     {"roomId":{"name":"Function_Test","path":"rooms/Function_Test/Function_Test.yy",},},
-    {"roomId":{"name":"Main3","path":"rooms/Main3/Main3.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":10,},
