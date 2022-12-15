@@ -17,7 +17,7 @@
   "soundFile": "snd_button_click.wav",
   "duration": 1.155873,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "object",
+    "path": "folders/Sounds/object.yy",
   },
 }

@@ -1,4 +1,5 @@
 HP = 100
+HP_MAX = 100
 recog=false
 hspd=0
 vspd=0

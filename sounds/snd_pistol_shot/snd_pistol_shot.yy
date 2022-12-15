@@ -17,7 +17,7 @@
   "soundFile": "snd_pistol_shot.mp3",
   "duration": 0.287347,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "object",
+    "path": "folders/Sounds/object.yy",
   },
 }

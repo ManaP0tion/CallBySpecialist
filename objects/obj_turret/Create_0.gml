@@ -1,4 +1,5 @@
 HP = 50
+HP_MAX = 50
 los = 100;
 distance_to_player = 10000
 active = false

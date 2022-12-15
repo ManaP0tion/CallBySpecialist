@@ -1,5 +1,4 @@
 
-
 // player input
 key_up = keyboard_check(ord("W"))
 key_down = keyboard_check(ord("S"));;
@@ -88,14 +87,16 @@ else
 	hspd = move * spd * spd_multi;
 
 // 사망
-if(HP <0 ){
+if(HP <=0 ){
+	HP = 0
 	sprite_index = spr_char_death
 	image_alpha -= 0.02
-	if (image_alpha <= 0){
+	if (image_alpha <= 0 && player_state == 1){
 		player_state = 0
+		layer_sequence_create("Instances", camera_get_view_x(view_camera[0]) + (camera_get_view_width(view_camera[0]) / 2), camera_get_view_y(view_camera[0]) + (camera_get_view_height(view_camera[0]) / 2), Fail_Die)
+		alarm[2] = 180
 	}
 }
-
 
 
 seedir = point_direction(x, y, mouse_x, mouse_y);

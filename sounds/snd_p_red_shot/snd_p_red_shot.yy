@@ -17,7 +17,7 @@
   "soundFile": "snd_p_red_shot.wav",
   "duration": 1.22941,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "object",
+    "path": "folders/Sounds/object.yy",
   },
 }

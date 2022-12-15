@@ -17,7 +17,7 @@
   "soundFile": "snd_pistol_reload_start.mp3",
   "duration": 0.417959,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "object",
+    "path": "folders/Sounds/object.yy",
   },
 }
