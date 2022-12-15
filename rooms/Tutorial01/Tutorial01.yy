@@ -94,7 +94,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_747E468F","properties":[],"isDnd":false,"objectId":{"name":"obj_silent","path":"objects/obj_silent/obj_silent.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":8.0,"y":536.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_50F23D55","properties":[],"isDnd":false,"objectId":{"name":"obj_cube_check_1","path":"objects/obj_cube_check_1/obj_cube_check_1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2056.0,"y":672.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_55D3E247","properties":[],"isDnd":false,"objectId":{"name":"obj_cube","path":"objects/obj_cube/obj_cube.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":776.0,"y":696.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_63B0058B","properties":[],"isDnd":false,"objectId":{"name":"obj_hud","path":"objects/obj_hud/obj_hud.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":72.0,"y":568.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Back","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_F0C4EB1","spriteId":{"name":"scifi_4g1a","path":"sprites/scifi_4g1a/scifi_4g1a.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":672.0,},
@@ -420,9 +419,9 @@
   "creationCodeFile": "${project_dir}/rooms/Tutorial01/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
+    {"name":"inst_5C891F47","path":"rooms/Tutorial01/Tutorial01.yy",},
     {"name":"inst_560B8C4F","path":"rooms/Tutorial01/Tutorial01.yy",},
     {"name":"inst_7F29AA62","path":"rooms/Tutorial01/Tutorial01.yy",},
-    {"name":"inst_5C891F47","path":"rooms/Tutorial01/Tutorial01.yy",},
     {"name":"inst_380311A9","path":"rooms/Tutorial01/Tutorial01.yy",},
     {"name":"inst_357ECA6D","path":"rooms/Tutorial01/Tutorial01.yy",},
     {"name":"inst_795E39CC","path":"rooms/Tutorial01/Tutorial01.yy",},
@@ -497,7 +496,6 @@
     {"name":"inst_747E468F","path":"rooms/Tutorial01/Tutorial01.yy",},
     {"name":"inst_50F23D55","path":"rooms/Tutorial01/Tutorial01.yy",},
     {"name":"inst_55D3E247","path":"rooms/Tutorial01/Tutorial01.yy",},
-    {"name":"inst_63B0058B","path":"rooms/Tutorial01/Tutorial01.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

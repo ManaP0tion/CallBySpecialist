@@ -45,7 +45,7 @@ if (distance_to_player<los1 && !collision_line(x,y,obj_player.x,obj_player.y, ob
 }
 
 //총 인식
-if (distance_to_player<los1) {
+if (distance_to_player<256) {
 	if(obj_player.shooting=true)
 		recog=true
 }
