@@ -9,10 +9,6 @@ image_index = 0;
 alarm[1]= room_speed * 2
 
 
-var shot = instance_create_layer(x, y, "Instances", obj_turret_bullet)
-shot.speed = 20
-shot.direction = pointdir
-
 
 /*HP = 25
 image_speed = 0;
